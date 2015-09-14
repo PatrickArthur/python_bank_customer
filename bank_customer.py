@@ -16,7 +16,7 @@ class BankCustomer(object):
     def set_balance(self, balance):
         """Set the customer's starting balance."""
         self.balance = balance
-        return str(self.name) + ' initiial balance is ' + str(self.balance) + ' dollars'
+        return str(self.name) + ' initial balance is ' + str(self.balance) + ' dollars'
 
     def withdraw(self, amount):
         """Return the balance remaining after withdrawing *amount*
