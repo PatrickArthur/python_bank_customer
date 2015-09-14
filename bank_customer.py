@@ -30,7 +30,12 @@ class BankCustomer(object):
         """Return the balance remaining after depositing *amount*
         dollars."""
         self.balance += amount
+        self.interest_on(self.name)
         return str(self.name) + ' deposited ' + str(self.balance) + ' dollars'
+        """ added message about interest rate """
+    def interest_on(self, cust):
+        print str(cust) + ' interest is 7%'
+
 
 x = BankCustomer("Patrick Arthur")
 print x.set_balance(120)
